@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charaset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/faa6b2205b.js" crossorigin="anonymous"></script>  
+    
+    <!-- Paste the link if you'd like to add Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+      :root {     
+        /* === Number of Slides you'd like to show === */
+        --num-of-slides    : 3;
+
+        /* === Panel Settings === */
+        --width           : 400px;
+        --height          : 80px;
+        --background-color: #eeeeee;
+        --border-radius   : 10px;
+
+        /* === Panel Border Settings === */
+        --border-style    : outset;
+        --border-width    : 10px;
+        --border-color    : #aaaaaa;
+        
+                
+        /* === Font Settings === */
+        --font-color      : #000000;
+        --font-size       : 55px;
+        font-family       : "Roboto", sans-serif;
+
+        /* === Slide Animation Settings === */
+        --slide-animation : slideRL;   /* Choose 1 from: (1)fade (2)rotateX (3)rotateY (4)slideRL (5)slideLR (6)slideTB (7)slideBT */
+        --slide-speed     : 7;         /* MIN 1<--[slow]--5--[fast]-->10 MAX */
+        
+        /* === Display time per 1 slide === */
+        --display-time    : 10s;
+      }     
+
+      /* === Color Settings of SNS icons === */
+      #twitter {
+        color: #00ACEE; 
+      }
+      #twitch {
+        color: #6441a5;
+      }
+      #youtube {
+        color: #ff0000;
+      }
+
+    </style>
+    <script src="animation.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="panel">
+      <!-- === From here, write down the content you'd like to display on the slides === -->
+
+      <!-- === Slide #1 === -->
+      <div class="slide">
+        <i class="fab fa-twitter" id="twitter"></i>
+        <div>twitter</div>
+      </div>
+
+      <!-- === Slide #2 === -->
+      <div class="slide">
+        <i class="fab fa-twitch" id="twitch"></i>
+        <div>twitch</div>
+      </div>
+
+      <!-- === Slide #3 === -->
+      <div class="slide">
+        <i class="fab fa-youtube" id="youtube"></i>
+        <div>youtube</div>
+      </div>
+
+      <!-- If you'd like to add slides more, COPY&PASTE 4 lines below -->
+      <!-- === Slide #n === -->
+      <div class="slide">
+        <!-- Write down the contents here -->
+      </div>
+
+    </div>
+  </body>
+</html>
